@@ -1,0 +1,24 @@
+application {
+  config {
+    applicationType monolith
+
+    baseName dogspace
+    packageName ru.zavanton.dogspace
+    buildTool gradle
+
+    databaseType sql
+    devDatabaseType h2Memory
+    prodDatabaseType postgresql
+
+    authenticationType jwt
+    cacheProvider no
+
+    clientFramework angularX
+    clientPackageManager npm
+
+    dtoSuffix Dto
+    reactive false
+
+    serverPort 8080
+  }
+}
